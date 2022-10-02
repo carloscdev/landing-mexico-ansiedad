@@ -12,6 +12,7 @@ export function Navbar() {
 
   return (
     <div>
+      <h2>djcadaniel</h2>
       <ul>
         {
           menu.map((item, index) => (
