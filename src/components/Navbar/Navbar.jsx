@@ -14,7 +14,7 @@ export function Navbar() {
   }
   const menu = [
     {
-      path: '/identificacion',
+      path: '/identification',
       title: 'Identificación'
     },
     {
