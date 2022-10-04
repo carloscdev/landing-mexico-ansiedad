@@ -1,7 +1,17 @@
+:root {
+  --white-color: #fff;
+  --primary-color: rgb(75, 162, 196);
+}
+
 @font-face {
   font-family: 'kids';
-  src: local('kids'), url(./assets/fonts/Drawing\ Kids.ttf) format('truetype');
+  src: local('kids'), url(./assets/fonts/Drawing-Kids.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'helvetica';
+  src: local('helvetica'), url(./assets/fonts/Helvetica.ttf) format('truetype');
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -14,5 +24,28 @@ body{
   width: 100%;
   margin: 0 auto;
   font-size: 1.6rem;
-  font-family: kids;
+  font-family: helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 1080px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.circle {
+  background-color: var(--primary-color);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
 }

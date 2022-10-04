@@ -6,9 +6,7 @@ export function MainLayout({ children }) {
 
   return (
     <>
-      <header className='header'>
-        <Navbar />
-      </header>
+      <Navbar />
       <section>
         { children }
       </section>
