@@ -1,0 +1,23 @@
+.home {
+  padding: 10rem 0;
+}
+.home__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 15rem;
+  font-size: 2rem;
+}
+.home img {
+  width: 100%;
+}
+.home span {
+  font-family: kids, sans-serif;
+}
+
+@media (max-width: 960px) {
+  .home__container {
+    grid-template-columns: 1fr;
+    gap: 7rem;
+  }
+}

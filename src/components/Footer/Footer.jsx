@@ -1,26 +1,28 @@
 import {Link} from 'react-router-dom';
 import './Footer.css'
-import logoFooter from '../../assets/img/logos/logo-uam.png';
-import logoPrincipal from '../../assets/img/logos/logoprincipalansiedad.png'
-import instagram from '../../assets/img/logos/instagram.png'
+import LogoUniversidad from '../../assets/img/logos/logo-uam.png';
+import LogoPrincipal from '../../assets/img/logos/logoprincipalansiedad.png'
+import LogoInstagram from '../../assets/img/logos/instagram.png'
 
 export const Footer = () => {
   return (
-    <>
-      <div className="containFooter">
-        <div className='containFooter__logo'>
-          <img src={logoFooter} alt="" />
+    <footer className="footer">
+      <section className="content footer__container">
+        <div className='footer__logo'>
+          <img src={LogoUniversidad} alt="Logo Universidad" width="260" />
         </div>
-        <div className='containFooter__user'>
+        <div className='footer__user'>
           <p>Luis Ricardo Casasola García</p>
         </div>
-        <div className='containFooter__social'>
+        <div className='footer__social'>
           <Link to="/">
-            <img className='containFooter__social--logoPrincipal' src={logoPrincipal} alt="" />
+            <img className='footer__social--logoPrincipal' src={LogoPrincipal} alt="Logo Ansiedad" width="220" />
           </Link>
-          <img className='containFooter__social--instagram' src={instagram} alt="" />
+          <a href="https://instagram.com/como_te_habla_la_ansiedad" target="_blank" rel="noreferrer noopener">
+            <img className='footer__social--instagram' src={LogoInstagram} alt="Logo Instagram" width="50" />
+          </a>
         </div>
-      </div>
-    </>
+      </section>
+    </footer>
   )
 }
