@@ -1,0 +1,97 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  min-width: 320px;
+  padding: 3rem 0 2rem 0;
+}
+.navbar__logo{
+  height: 90px;
+}
+.navbar h2{
+  color: white;
+}
+.navbar ul{
+  display: flex;
+  flex-flow: row wrap;
+}
+.navbar ul li{
+  margin-right: 1rem;
+  list-style: none;
+}
+.navbar ul li a{
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+}
+.navbar__menu{
+  display: none;
+}
+.navbar__menu img{
+  height: 25px;
+  color: white;
+}
+@media only screen and (max-width:920px){
+  .navbar{
+    width: 95%;
+  }
+}
+@media only screen and (max-width:900px){
+  .navbar{
+    position: relative;
+    transition: all .6s ease;
+  }
+  .navbar ul{
+    display: none;
+  }
+  .navbar__menu{
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: white;
+  }
+  .navbar__expanded{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(75, 162, 196);
+    transition: all .6s ease
+  }
+  .navbar__expanded .navbar__logo{
+    position: absolute;
+    top: 10px;
+    left: 35px;
+  }
+  .navbar__expanded ul{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar__expanded ul li{
+    margin: 15px 0 ;
+    list-style: none;
+  }
+  .navbar__expanded ul li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+  }
+  .navbar__expanded .navbar__menu{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    color: white;
+  }
+  .navbar__expanded .navbar__menu img{
+    height: 30px;
+    color: white;
+  }
+}
