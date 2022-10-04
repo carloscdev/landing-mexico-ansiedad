@@ -2,6 +2,10 @@ import React from 'react'
 
 export function Home() {
   return (
-    <div>This is my HOME</div>
+    <div>
+      HOME
+      <br />
+      <div className="circle"></div>
+    </div>
   )
 }

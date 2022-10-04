@@ -1,18 +1,68 @@
-.navbar{
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 2rem;
+  position: relative;
+  z-index: 50;
+}
+.navbar__container{
+  height: 12rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  min-width: 320px;
-  padding: 3rem 0 2rem 0;
 }
+.navbar__generic{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 100%;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__icon {
+  display: none;
+}
+
 .navbar__logo{
   height: 90px;
 }
-.navbar h2{
-  color: white;
+
+@media (max-width: 960px) {
+  .navbar__icon {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+  .navbar__icon img {
+    fill: var(--white-color);
+    width: 2.5rem;
+  }
+  .navbar__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    height: calc(100vh - 12rem);
+    background-color: var(--primary-color);
+    transition: top 1s ease-in-out;
+    width: 100%;
+    font-size: 3.5rem;
+    gap: 4rem;
+    z-index: -10;
+  }
+
+  .active {
+    top: 12rem;
+  }
+}
+/* .navbar h2{
+  color: var(--white-color);
 }
 .navbar ul{
   display: flex;
@@ -25,14 +75,14 @@
 .navbar ul li a{
   text-decoration: none;
   font-size: 1.8rem;
-  color: white;
+  color: var(--white-color);
 }
 .navbar__menu{
   display: none;
 }
 .navbar__menu img{
   height: 25px;
-  color: white;
+  color: var(--white-color);
 }
 @media only screen and (max-width:920px){
   .navbar{
@@ -52,12 +102,12 @@
     position: absolute;
     top: 35px;
     right: 20px;
-    color: white;
+    color: var(--white-color);
   }
   .navbar__expanded{
     position: relative;
     height: 100vh;
-    background-color: rgb(75, 162, 196);
+    background-color: var(--primary-color);
     transition: all .6s ease
   }
   .navbar__expanded .navbar__logo{
@@ -82,16 +132,16 @@
   .navbar__expanded ul li a{
     text-decoration: none;
     font-size: 1.8rem;
-    color: white;
+    color: var(--white-color);
   }
   .navbar__expanded .navbar__menu{
     position: absolute;
     top: 35px;
     right: 35px;
-    color: white;
+    color: var(--white-color);
   }
   .navbar__expanded .navbar__menu img{
     height: 30px;
-    color: white;
+    color: var(--white-color);
   }
-}
+} */
