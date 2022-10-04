@@ -6,15 +6,11 @@ export function MainLayout({ children }) {
 
   return (
     <>
-      <header className='header'>
-        <Navbar />
-      </header>
+      <Navbar />
       <section>
         { children }
       </section>
-      <footer className='footer'>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   )
 }

@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import bar from '../../assets/img/logos/bar.svg';
-import close from '../../assets/img/logos/close.svg';
+import BurgerMenu from '../../assets/img/logos/bar.svg';
+import CloseMenu from '../../assets/img/logos/close.svg';
 import './Navbar.css';
-import logo from '../../assets/img/logos/logoprincipalansiedad.png';
+import Logo from '../../assets/img/logos/logoprincipalansiedad.png';
 
 export function Navbar() {
 
-  const [toggle, setToggle] = useState(false);
-  const [toggle2, setToggle2] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(false);
 
-  const handleToggle = () =>{
-    setToggle(!toggle);
-  }
-  const handleToggle2 = () =>{
-    setToggle2(!toggle2)
+  const handleToggleMenu = () =>{
+    setToggleMenu(!toggleMenu);
   }
   const menu = [
     {
@@ -33,29 +29,31 @@ export function Navbar() {
       path: '/recomendaciones',
       title: 'Recomendaciones'
     }
-  ]
+  ];
 
   return (
-    <>
-      <div className={toggle ? 'navbar__expanded' : 'navbar'}>
-        <Link to="/">
-          <img  className='navbar__logo' src={logo} alt="" />
-        </Link>
-        <ul>
-          {
-            menu.map((item, index) => (
-              <li onClick={handleToggle} key={index}>
-                <Link to={item.path}>
-                  { item.title }
-                </Link>
-              </li>
-            ))
-          }
-        </ul>
-        <div className='navbar__menu' onClick={handleToggle}>
-          {toggle ? <img src={close} alt="" /> : <img src={bar} alt="" />}
+    <header className='navbar'>
+      <nav className="content navbar__container">
+        <div className="navbar__generic">
+          <Link to="/">
+            <img width="240" className='navbar__logo' src={Logo} alt="Logo Ansiedad" />
+          </Link>
+          <ul className={(toggleMenu && 'active') + ' navbar__list'}>
+            {
+              menu.map((item, index) => (
+                <li onClick={handleToggleMenu} key={index}>
+                  <Link to={item.path}>
+                    { item.title }
+                  </Link>
+                </li>
+              ))
+            }
+          </ul>
+          <div className='navbar__icon' onClick={handleToggleMenu}>
+            <img src={toggleMenu ? CloseMenu : BurgerMenu} alt="Burger Menu" />
+          </div>
         </div>
-      </div>
-    </>
+      </nav>
+    </header>
   )
 }

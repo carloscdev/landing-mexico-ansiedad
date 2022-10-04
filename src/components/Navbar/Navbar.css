@@ -1,97 +1,58 @@
-.navbar{
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+}
+.navbar__container{
+  height: 12rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  min-width: 320px;
-  padding: 3rem 0 2rem 0;
 }
-.navbar__logo{
-  height: 90px;
-}
-.navbar h2{
-  color: white;
-}
-.navbar ul{
+.navbar__generic{
   display: flex;
-  flex-flow: row wrap;
+  align-items: center;
+  justify-content:space-between;
+  width: 100%;
 }
-.navbar ul li{
-  margin-right: 1rem;
-  list-style: none;
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-.navbar ul li a{
-  text-decoration: none;
-  font-size: 1.8rem;
-  color: white;
-}
-.navbar__menu{
+
+.navbar__icon {
   display: none;
 }
-.navbar__menu img{
-  height: 25px;
-  color: white;
-}
-@media only screen and (max-width:920px){
-  .navbar{
-    width: 95%;
-  }
-}
-@media only screen and (max-width:900px){
-  .navbar{
-    position: relative;
-    transition: all .6s ease;
-  }
-  .navbar ul{
-    display: none;
-  }
-  .navbar__menu{
+
+@media (max-width: 960px) {
+  .navbar__icon {
     display: block;
-    position: absolute;
-    top: 35px;
-    right: 20px;
-    color: white;
-  }
-  .navbar__expanded{
-    position: relative;
-    height: 100vh;
-    background-color: rgb(75, 162, 196);
-    transition: all .6s ease
-  }
-  .navbar__expanded .navbar__logo{
-    position: absolute;
-    top: 10px;
-    left: 35px;
-  }
-  .navbar__expanded ul{
-    position: absolute;
-    top: 10px;
     width: 100%;
-    height: 100%;
+    text-align: right;
+  }
+  .navbar__icon img {
+    fill: var(--white-color);
+    width: 2.5rem;
+  }
+  .navbar__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  .navbar__expanded ul li{
-    margin: 15px 0 ;
-    list-style: none;
-  }
-  .navbar__expanded ul li a{
-    text-decoration: none;
-    font-size: 1.8rem;
-    color: white;
-  }
-  .navbar__expanded .navbar__menu{
     position: absolute;
-    top: 35px;
-    right: 35px;
-    color: white;
+    top: -100vh;
+    left: 0;
+    height: calc(100vh - 12rem);
+    background-color: var(--primary-color);
+    transition: top 1s ease-in-out;
+    width: 100%;
+    font-size: 3.5rem;
+    gap: 4rem;
   }
-  .navbar__expanded .navbar__menu img{
-    height: 30px;
-    color: white;
+
+  .active {
+    top: 12rem;
   }
 }
