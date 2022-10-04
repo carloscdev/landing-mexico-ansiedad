@@ -1,20 +1,15 @@
 import React from 'react';
-import { Navbar, Footer } from '../components';
-import './MainLayout.css'
+import { Navbar } from '../components';
 
 export function MainLayout({ children }) {
 
   return (
-    <>
-      <header className='header'>
-        <Navbar />
-      </header>
-      <section>
-        { children }
-      </section>
-      <footer className='footer'>
-        <Footer />
+    <div>
+      <Navbar />
+      { children }
+      <footer>
+        Footer....
       </footer>
-    </>
+    </div>
   )
 }
