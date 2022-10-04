@@ -1,6 +1,8 @@
 :root {
   --white-color: #fff;
-  --primary-color: rgb(75, 162, 196);
+  --primary-color: #8ec4d4;
+  --secondary-color: #4483AC;
+  --red-color: #e0406b;
 }
 
 @font-face {
@@ -35,17 +37,20 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--red-color);
 }
 
 .content {
-  max-width: 1080px;
-  width: 95%;
+  max-width: 1280px;
+  width: 90%;
   margin: 0 auto;
 }
 
-.circle {
-  background-color: var(--primary-color);
-  width: 15rem;
-  height: 15rem;
-  border-radius: 100%;
+h2 {
+  font-family: kids, sans-serif;
+  font-size: 4.5rem;
 }

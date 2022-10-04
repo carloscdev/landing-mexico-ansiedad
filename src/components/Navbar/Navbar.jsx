@@ -36,7 +36,7 @@ export function Navbar() {
       <nav className="content navbar__container">
         <div className="navbar__generic">
           <Link to="/">
-            <img  className='navbar__logo' src={Logo} alt="Logo Ansiedad" />
+            <img width="240" className='navbar__logo' src={Logo} alt="Logo Ansiedad" />
           </Link>
           <ul className={(toggleMenu && 'active') + ' navbar__list'}>
             {

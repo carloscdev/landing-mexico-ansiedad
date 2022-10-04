@@ -10,9 +10,7 @@ export function MainLayout({ children }) {
       <section>
         { children }
       </section>
-      <footer className='footer'>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   )
 }
