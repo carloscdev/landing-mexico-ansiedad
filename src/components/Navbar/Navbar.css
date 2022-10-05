@@ -42,11 +42,11 @@
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: -100vh;
-    left: 0;
+    top: 12rem;
+    left: -100vw;
     height: calc(100vh - 12rem);
     background-color: var(--primary-color);
-    transition: top 1s ease-in-out;
+    transition: left 1s ease-in-out;
     width: 100%;
     font-size: 3.5rem;
     gap: 4rem;
@@ -54,5 +54,6 @@
 
   .active {
     top: 12rem;
+    left: 0;
   }
 }
