@@ -1,12 +1,12 @@
-.home {
-  padding: 10rem 0;
-}
 .home__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 15rem;
   font-size: 2rem;
+}
+.home h2 {
+  margin-bottom: 5rem;
 }
 .home img {
   width: 100%;

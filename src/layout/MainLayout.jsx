@@ -7,7 +7,9 @@ export function MainLayout({ children }) {
   return (
     <>
       <Navbar />
-      { children }
+      <div className="mainLayout">
+        { children }
+      </div>
       <Footer />
     </>
   )

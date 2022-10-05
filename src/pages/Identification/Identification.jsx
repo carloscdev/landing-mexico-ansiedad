@@ -24,15 +24,14 @@ export function Identification() {
       <div className="identification__description">
         <h2>Identificación</h2>
         <p>Un alumno con ansiedad expresa una
-          serie de conductas que se pueden identi-
-          ficar con la observación directa, el análisis
+          serie de conductas que se pueden identificar con la observación directa, el análisis
           y el rendimiento escolar.</p>
       </div>
       <div className="identification__behaviors">
         <h3>Conductas Ansiosas</h3>
         <div className='behaviors__container'>
-          {itemsBehaviors.map(item=>(
-            <div className="behaviors__container--item">
+          {itemsBehaviors.map((item, index)=>(
+            <div className="behaviors__container--item" key={index}>
               <div className='container__item--hover'>
                   <p>{item}</p>
               </div>

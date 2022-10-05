@@ -3,7 +3,6 @@
   --primary-color: #8ec4d4;
   --secondary-color: #4483AC;
   --red-color: #e0406b;
-  --blue-color: #074a77;
 }
 
 @font-face {
@@ -31,6 +30,10 @@ body{
   overflow-x: hidden;
 }
 
+body.active {
+  overflow-y: hidden;
+}
+
 li {
   list-style: none;
 }
@@ -47,7 +50,7 @@ a:hover {
 }
 
 .content {
-  max-width: 1280px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -55,9 +58,23 @@ a:hover {
 h2 {
   font-family: kids, sans-serif;
   font-size: 4.5rem;
+  line-height: 6rem;
 }
 
 h3 {
   font-family: kids, sans-serif;
   font-size: 3rem;
+}
+
+h5 {
+  font-family: kids, sans-serif;
+  font-size: 2.5rem;
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
 }
