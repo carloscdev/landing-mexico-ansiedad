@@ -10,8 +10,16 @@ export function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const handleToggleMenu = () =>{
-    setToggleMenu(!toggleMenu);
+    const viewport = window.matchMedia("(max-width: 960px)")
+    if (viewport.matches) {
+      setToggleMenu((prev) => {
+        if (!prev) document.body.classList.add('active');
+        else document.body.classList.remove('active')
+        return !prev
+      });
+    }
   }
+
   const menu = [
     {
       path: '/identificacion',

@@ -1,5 +1,5 @@
 export * from './Home';
-export * from './Identificacion';
+export * from './Identification';
 export *from './PrimerosAuxilios';
 export * from './Recomedaciones';
-export * from './Tecnicas';
+export * from './Techniques';

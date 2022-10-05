@@ -10,9 +10,9 @@ export function Home() {
           <h2>Manual de emergencia</h2>
           <p>
             Este es un manual de emergencia que pretende informar al personal
-            docente sobre la identificación y primeros auxi- lios ante un
+            docente sobre la identificación y primeros auxilios ante un
             problema de ansiedad en los alumnos, así como recomendación y
-            oriantación hacia los servicios psicológi- cos que ofrece la
+            oriantación hacia los servicios psicológicos que ofrece la
             <span> UAM Azcapotzalco.</span>
           </p>
         </div>
@@ -28,9 +28,9 @@ export function Home() {
           cosas.
         </p>
         <p>
-          La Asociación Esta- dounidense de Psi- cología (APA), define la
-          ansiedad como “una emoción carac- terizada por senti- mientos de
-          tensión, pensamientos de preocupación y cam- bios físicos”.
+          La Asociación Esta- dounidense de Psicología (APA), define la
+          ansiedad como “una emoción caracterizada por sentimientos de
+          tensión, pensamientos de preocupación y cambios físicos”.
           <br /> <br />
           La ansiedad es una respuesta anticipa- toria a una amenaza futura por lo
           tanto no se sabe si existirá o se vive como real

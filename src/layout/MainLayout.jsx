@@ -7,9 +7,9 @@ export function MainLayout({ children }) {
   return (
     <>
       <Navbar />
-      <section>
+      <div className="mainLayout">
         { children }
-      </section>
+      </div>
       <Footer />
     </>
   )
