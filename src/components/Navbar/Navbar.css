@@ -50,10 +50,10 @@
     width: 100%;
     font-size: 3.5rem;
     gap: 4rem;
+    z-index: 20;
   }
 
   .active {
-    top: 12rem;
     left: 0;
   }
 }

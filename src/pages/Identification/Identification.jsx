@@ -4,22 +4,22 @@ import './Identification.css';
 export function Identification() {
 
   const itemsBehaviors =[
-      'Nerviosismo, agitación o tensión',
-      'Respiración acelerada',
-      'Sudoración',
-      'Temblores',
-      'Tics nerviosos',
-      'Problemas de concentración',
-      'Comportamiento pasivo y desmotivado',
-      'Comportamiento disruptivo',
-      'Malas calificaciones',
-      'Faltas a clase'
-  ]
+    'Nerviosismo, agitación o tensión',
+    'Respiración acelerada',
+    'Sudoración',
+    'Temblores',
+    'Tics nerviosos',
+    'Problemas de concentración',
+    'Comportamiento pasivo y desmotivado',
+    'Comportamiento disruptivo',
+    'Malas calificaciones',
+    'Faltas a clase'
+  ];
 
   return (
     <main className='content identification'>
       <div className="identification__img">
-        <img src={ImageGirl} alt="" />
+        <img src={ImageGirl} alt="Imagen Niña Identificación" />
       </div>
       <div className="identification__description">
         <h2>Identificación</h2>
@@ -29,7 +29,7 @@ export function Identification() {
           y el rendimiento escolar.</p>
       </div>
       <div className="identification__behaviors">
-        <h2>Conductas Ansiosas</h2>
+        <h3>Conductas Ansiosas</h3>
         <div className='behaviors__container'>
           {itemsBehaviors.map(item=>(
             <div className="behaviors__container--item">
