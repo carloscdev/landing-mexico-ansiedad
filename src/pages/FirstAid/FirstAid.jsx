@@ -1,6 +1,7 @@
 import './FirstAid.css';
 import ImageDoctor from '../../assets/img/page3/doctor.png';
 import ImageBoy from '../../assets/img/page3/boyHelp.png';
+import FacebookIcon from '../../assets/img/logos/facebook.png';
 
 export const FirstAdd = () => {
   return (
@@ -81,6 +82,7 @@ export const FirstAdd = () => {
           <div className="firstAid__contact--item item2">
               <h3>Apoyo psicológico, Línea UAM.</h3>
               <h3>Nuevas líneas telefónicas de atención:</h3>
+              <br />
               <p>55 25 55 80 92</p>
               <p>55 58 04 48 79</p>
               <p>55 58 04 64 44</p>
@@ -88,12 +90,15 @@ export const FirstAdd = () => {
           </div>
           <div className="firstAid__contact--item item3">
             <h3>Correo de ayuda "Yo puedo sentirme bien"</h3>
+            <br />
             <p>salud.mental@correo.uam.mx</p>
           </div>
           <div className="firstAid__contact--item item4">
             <h3>Facebook</h3>
-            <h3>Bienestar Comunitario <br /> UAM</h3>
-            <p>https://www.facebook.com/BienestarComunitarioUAM/</p>
+            <h3>Bienestar Comunitario <br /> UAM</h3><br />
+            <a href="https://www.facebook.com/BienestarComunitarioUAM/" target='_blank' rel='noreferrer noopener'>
+              <img src={FacebookIcon} alt="facebook" />
+            </a>
           </div>
         </div>
       </div>
