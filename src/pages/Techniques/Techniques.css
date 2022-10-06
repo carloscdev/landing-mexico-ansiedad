@@ -41,14 +41,6 @@
 .techniques__grid--item:hover .circle {
   background-color: var(--red-color);
 }
-.techniques__grid--item .circle {
-  width: 5rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: var(--secondary-color);
-  margin: 0 auto;
-  transition: background 0.2s ease-in-out;
-}
 
 @media (max-width: 960px) {
   .techniques__header {
