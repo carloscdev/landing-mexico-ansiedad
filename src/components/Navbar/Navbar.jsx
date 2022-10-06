@@ -26,7 +26,7 @@ export function Navbar() {
       title: 'Identificación'
     },
     {
-      path: '/primerosAuxilios',
+      path: '/primeros-auxilios',
       title: 'Primeros Auxilios'
     },
     {
