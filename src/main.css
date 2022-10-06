@@ -78,3 +78,12 @@ p {
 img {
   max-width: 100%;
 }
+
+.circle {
+  width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  transition: background 0.2s ease-in-out;
+}
