@@ -1,4 +1,4 @@
-import { Home, Identification, Techniques, Recomedaciones, FirstAdd } from '../pages';
+import { Home, Identification, Techniques, Recommendations, FirstAdd } from '../pages';
 import { MainLayout } from '../layout';
 
 const routes = [
@@ -13,7 +13,7 @@ const routes = [
     component: Identification
   },
   {
-    path: '/primerosAuxilios',
+    path: '/primeros-auxilios',
     layout: MainLayout,
     component: FirstAdd
   },
@@ -25,7 +25,7 @@ const routes = [
   {
     path: '/recomendaciones',
     layout: MainLayout,
-    component: Recomedaciones
+    component: Recommendations
   }
 ]
 

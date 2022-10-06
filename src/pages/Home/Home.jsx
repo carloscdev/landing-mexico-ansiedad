@@ -28,11 +28,11 @@ export function Home() {
           cosas.
         </p>
         <p>
-          La Asociación Esta- dounidense de Psicología (APA), define la
+          La Asociación Estadounidense de Psicología (APA), define la
           ansiedad como “una emoción caracterizada por sentimientos de
           tensión, pensamientos de preocupación y cambios físicos”.
           <br /> <br />
-          La ansiedad es una respuesta anticipa- toria a una amenaza futura por lo
+          La ansiedad es una respuesta anticipatoria a una amenaza futura por lo
           tanto no se sabe si existirá o se vive como real
         </p>
       </div>
