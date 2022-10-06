@@ -1,7 +1,7 @@
 import React from "react";
 import "./Recommendations.css";
 import WorryWatch from "../../assets/img/page5/worrywatch.png";
-import MindShift from "../../assets/img/page5/MindShift.png";
+import MindShift from "../../assets/img/page5/mindshift.png";
 import Breathe from "../../assets/img/page5/breathe.png";
 import Whatsup from "../../assets/img/page5/whatsup.png";
 import Moods from "../../assets/img/page5/moods.png";
